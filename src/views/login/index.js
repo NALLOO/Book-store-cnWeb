@@ -71,6 +71,7 @@ function Login() {
         >
           <Typography
             variant="h2"
+            
             style={{
               fontWeight: "700",
               fontSize: "35px",
@@ -111,7 +112,7 @@ function Login() {
               label="Password"
             />
           </FormControl>
-          <span
+          <span onClick={()=>{console.log('asasd')}}
             style={{
               marginTop: "20px",
             }}
@@ -126,7 +127,7 @@ function Login() {
                 color: "#075fed",
               }}
             >
-              Đằng ký
+              Đăng ký
             </Link>
           </span>
           <Button
