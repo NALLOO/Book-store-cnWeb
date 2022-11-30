@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import {
   TextField,
@@ -110,6 +111,24 @@ function Login() {
               label="Password"
             />
           </FormControl>
+          <span
+            style={{
+              marginTop: "20px",
+            }}
+          >
+            Bạn chưa có tài khoản
+            <Link
+              to="/signup"
+              style={{
+                marginLeft: "5px",
+                cursor: "pointer",
+                textDecoration: "underline",
+                color: "#075fed",
+              }}
+            >
+              Đằng ký
+            </Link>
+          </span>
           <Button
             variant="contained"
             disabled={loading}
@@ -118,6 +137,7 @@ function Login() {
               backgroundColor: "#075fed",
               color: "#fff",
               borderRadius: "100px",
+              marginTop: "20px",
               height: "56px",
               fontWeight: "500",
             }}

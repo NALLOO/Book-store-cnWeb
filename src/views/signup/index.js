@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box, TextField, Typography, Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const initialValue = {
   name: "",
@@ -92,7 +93,24 @@ function SignUp() {
             placeholder="Hãy nhập lại mật khẩu..."
             onChange={handleChange("cfPassword")}
           ></TextField>
-
+          <span
+            style={{
+              marginTop: "20px",
+            }}
+          >
+            Bạn đã có tài khoản
+            <Link
+              to="/login"
+              style={{
+                marginLeft: "5px",
+                cursor: "pointer",
+                textDecoration: "underline",
+                color: "#075fed",
+              }}
+            >
+              Đăng nhập
+            </Link>
+          </span>
           <Button
             variant="contained"
             disabled={loading}
@@ -100,6 +118,7 @@ function SignUp() {
             style={{
               backgroundColor: "#075fed",
               color: "#fff",
+              marginTop: "20px",
               borderRadius: "100px",
               height: "56px",
               fontWeight: "500",
