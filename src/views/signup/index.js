@@ -40,6 +40,7 @@ function SignUp() {
           width: "500px",
           backgroundColor: "#fff",
           padding: "24px 48px",
+          marginTop: "60px",
           borderRadius: "8px",
           boxShadow: "0 0 10px 0 #aaabbb",
         }}

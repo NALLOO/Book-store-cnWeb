@@ -1,9 +1,12 @@
 import React from "react";
-
-HomePage.propTypes = {};
+import BookDetail from "../BookDetail";
 
 function HomePage() {
-  return <div>adsadad</div>;
+  return (
+    <div>
+      <BookDetail />
+    </div>
+  );
 }
 
 export default HomePage;

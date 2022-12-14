@@ -19,6 +19,7 @@ function Header() {
     >
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Open_book_nae_02.svg/2560px-Open_book_nae_02.svg.png"
+        alt="logo"
         style={{
           width: "70px",
           height: "40px",
